@@ -1,5 +1,3 @@
-import { CheckCircle, Users, Droplets, Mail } from "lucide-react";
-
 import { ClipboardList, Wrench, Users, Droplets, Mail } from "lucide-react";
 
 const steps = [
