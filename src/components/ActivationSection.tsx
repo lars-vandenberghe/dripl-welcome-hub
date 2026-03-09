@@ -1,4 +1,4 @@
-import { Download, Mail, Image, FileText, Copy, Check } from "lucide-react";
+import { Download, Mail, Image, FileText, Copy, Check, Monitor } from "lucide-react";
 import { useState } from "react";
 import posterChoice from "@/assets/poster-choice.jpg";
 import posterGeneral from "@/assets/poster-general.jpg";
