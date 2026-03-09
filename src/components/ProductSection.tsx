@@ -3,24 +3,35 @@ import { Leaf, Zap, Heart, Recycle } from "lucide-react";
 const features = [
   {
     icon: Leaf,
-    title: "100% Natural Ingredients",
-    description: "All our flavours use natural ingredients — no artificial sweeteners, colours or preservatives.",
+    title: "Natural Ingredients",
+    description: "All our flavours use natural ingredients and aromas for great taste you can feel good about.",
   },
   {
     icon: Zap,
     title: "Functional Beverages",
-    description: "From energy-boosting Maté to vitamin-packed fruit blends, drinks that do more than just hydrate.",
+    description: "From energy-boosting Maté to vitamin-packed Focus drinks with B6, B12 and caffeine — drinks that do more than just hydrate.",
   },
   {
     icon: Heart,
-    title: "Healthy & Sugar-free",
-    description: "Zero sugar, maximum taste. Dripl drinks are designed to support a healthier workplace.",
+    title: "Zero Sugar & Low-Cal",
+    description: "Zero sugar, low calories. Dripl uses sucralose for sweetness without impacting blood sugar or energy levels.",
   },
   {
     icon: Recycle,
     title: "Zero Packaging Waste",
-    description: "No bottles, no cans, no waste. Your Refill Point connects directly to the water supply.",
+    description: "No bottles, no cans, no waste. Your Refill Point connects directly to the water supply — 90% less packaging than traditional vending.",
   },
+];
+
+const flavours = [
+  { name: "Lemon", tag: null, color: "bg-yellow-100 text-yellow-700" },
+  { name: "Ice Tea", tag: "New", color: "bg-amber-100 text-amber-700" },
+  { name: "Cranberry Hibiscus", tag: "New", color: "bg-red-100 text-red-700" },
+  { name: "Rose Mint", tag: "New", color: "bg-pink-100 text-pink-700" },
+  { name: "Ginger Lime", tag: "Focus", color: "bg-lime-100 text-lime-700" },
+  { name: "Maté Grapefruit", tag: "Energy", color: "bg-green-100 text-green-700" },
+  { name: "Peach", tag: "Vitamin Boost", color: "bg-orange-100 text-orange-700" },
+  { name: "Raspberry", tag: "Vitamin Boost", color: "bg-rose-100 text-rose-700" },
 ];
 
 const ProductSection = () => {
@@ -56,21 +67,24 @@ const ProductSection = () => {
         </div>
 
         <div className="mt-12 rounded-xl bg-card p-8 card-shadow">
-          <h3 className="mb-4 font-display text-xl font-semibold text-card-foreground">
-            Available Flavours
+          <h3 className="mb-2 font-display text-xl font-semibold text-card-foreground">
+            Our 8 Flavours
           </h3>
+          <p className="mb-6 text-sm text-muted-foreground">
+            Including 3 functional drinks designed to boost focus, energy, and daily wellness.
+          </p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { name: "Classic Lemon", color: "bg-yellow-100 text-yellow-700" },
-              { name: "Rose-Mint", color: "bg-pink-100 text-pink-700" },
-              { name: "Raspberry Grapefruit", color: "bg-red-100 text-red-700" },
-              { name: "Maté Energiser", color: "bg-green-100 text-green-700" },
-            ].map((flavour) => (
+            {flavours.map((flavour) => (
               <div
                 key={flavour.name}
-                className={`rounded-lg px-4 py-3 text-center font-medium ${flavour.color}`}
+                className={`rounded-lg px-4 py-3 text-center font-medium ${flavour.color} relative`}
               >
                 {flavour.name}
+                {flavour.tag && (
+                  <span className="ml-2 inline-block rounded-full bg-foreground/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide">
+                    {flavour.tag}
+                  </span>
+                )}
               </div>
             ))}
           </div>
