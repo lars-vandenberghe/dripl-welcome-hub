@@ -1,5 +1,14 @@
 import { Leaf, Zap, Heart, Recycle } from "lucide-react";
 
+import lemonImg from "@/assets/flavours/lemon.png";
+import iceTeaImg from "@/assets/flavours/ice-tea.png";
+import cranberryHibiscusImg from "@/assets/flavours/cranberry-hibiscus.png";
+import roseMintImg from "@/assets/flavours/rose-mint.png";
+import gingerLimeImg from "@/assets/flavours/ginger-lime.png";
+import mateImg from "@/assets/flavours/mate.png";
+import peachWhiteTeaImg from "@/assets/flavours/peach-white-tea.png";
+import raspberryGrapefruitImg from "@/assets/flavours/raspberry-grapefruit.png";
+
 const features = [
   {
     icon: Leaf,
@@ -24,14 +33,14 @@ const features = [
 ];
 
 const flavours = [
-  { name: "Lemon", tag: null, color: "bg-yellow-100 text-yellow-700" },
-  { name: "Ice Tea", tag: "New", color: "bg-amber-100 text-amber-700" },
-  { name: "Cranberry Hibiscus", tag: "New", color: "bg-red-100 text-red-700" },
-  { name: "Rose Mint", tag: "New", color: "bg-pink-100 text-pink-700" },
-  { name: "Ginger Lime", tag: "Focus", color: "bg-lime-100 text-lime-700" },
-  { name: "Maté Grapefruit", tag: "Energy", color: "bg-green-100 text-green-700" },
-  { name: "Peach", tag: "Vitamin Boost", color: "bg-orange-100 text-orange-700" },
-  { name: "Raspberry", tag: "Vitamin Boost", color: "bg-rose-100 text-rose-700" },
+  { name: "Lemon", tag: null, image: lemonImg },
+  { name: "Ice Tea", tag: "New", image: iceTeaImg },
+  { name: "Cranberry Hibiscus", tag: "New", image: cranberryHibiscusImg },
+  { name: "Rose Mint", tag: "New", image: roseMintImg },
+  { name: "Ginger Lime", tag: "Focus", image: gingerLimeImg },
+  { name: "Maté", tag: "Energy", image: mateImg },
+  { name: "Peach White Tea", tag: "Vitamin Boost", image: peachWhiteTeaImg },
+  { name: "Raspberry Grapefruit", tag: "Vitamin Boost", image: raspberryGrapefruitImg },
 ];
 
 const ProductSection = () => {
@@ -77,14 +86,24 @@ const ProductSection = () => {
             {flavours.map((flavour) => (
               <div
                 key={flavour.name}
-                className={`rounded-lg px-4 py-3 text-center font-medium ${flavour.color} relative`}
+                className="group relative overflow-hidden rounded-xl aspect-square"
               >
-                {flavour.name}
-                {flavour.tag && (
-                  <span className="ml-2 inline-block rounded-full bg-foreground/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide">
-                    {flavour.tag}
-                  </span>
-                )}
+                <img
+                  src={flavour.image}
+                  alt={flavour.name}
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="font-display text-lg font-bold text-white leading-tight">
+                    {flavour.name}
+                  </p>
+                  {flavour.tag && (
+                    <span className="mt-1 inline-block rounded-full bg-white/20 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm">
+                      {flavour.tag}
+                    </span>
+                  )}
+                </div>
               </div>
             ))}
           </div>
