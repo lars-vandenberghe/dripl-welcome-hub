@@ -219,12 +219,13 @@ const ActivationSection = () => {
               Want to make it personal? We can install a <strong>custom screensaver</strong> on your Refill Point's touchscreen with a personalised message to your colleagues — perfect for welcoming your team, highlighting sustainability goals, or celebrating milestones.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
-              Contact your account manager to request yours.
+              Simply send us your image as an attachment and we'll take care of the rest.
             </p>
             <a
-              href="#contact"
+              href="mailto:febethomas@dripl.be?subject=Custom%20Screensaver%20Request&body=Hi%2C%0A%0AI'd%20like%20to%20request%20a%20custom%20screensaver%20for%20our%20Refill%20Point.%20Please%20find%20the%20image%20attached.%0A%0AThank%20you!"
               className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
+              <Mail className="h-3.5 w-3.5" />
               Request a Screensaver
             </a>
           </div>
