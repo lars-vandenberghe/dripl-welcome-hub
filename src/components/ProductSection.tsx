@@ -1,4 +1,6 @@
 import { Leaf, Zap, Heart, Recycle } from "lucide-react";
+import refillPointSide from "@/assets/refill-point-side.png";
+import refillPointScreen from "@/assets/refill-point-screen.png";
 
 import lemonImg from "@/assets/flavours/lemon.png";
 import iceTeaImg from "@/assets/flavours/ice-tea.png";
