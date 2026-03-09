@@ -1,4 +1,4 @@
-import { Package, RefreshCw, Clock } from "lucide-react";
+import { Package, Droplets, Clock, ExternalLink } from "lucide-react";
 
 const OrderingSection = () => {
   return (
@@ -7,9 +7,19 @@ const OrderingSection = () => {
         <h2 className="mb-4 text-center font-display text-3xl font-bold text-foreground md:text-4xl">
           Ordering & Refills
         </h2>
-        <p className="mx-auto mb-14 max-w-xl text-center text-muted-foreground">
-          Running low on flavour cartridges? Here's how to order.
+        <p className="mx-auto mb-6 max-w-xl text-center text-muted-foreground">
+          Order your flavour boxes and CO2 bottles via MyDripl — your personal account on our ordering platform.
         </p>
+        <div className="mb-14 text-center">
+          <a
+            href="https://shop.dripl.be/login-2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-lg transition-transform hover:scale-105"
+          >
+            Go to MyDripl <ExternalLink className="h-4 w-4" />
+          </a>
+        </div>
 
         <div className="grid gap-8 md:grid-cols-3">
           <div className="card-shadow rounded-xl bg-card p-6 text-center">
@@ -17,27 +27,22 @@ const OrderingSection = () => {
               <Package className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-2 font-display text-lg font-semibold text-card-foreground">
-              How to Order
+              Flavour Boxes
             </h3>
             <p className="text-sm text-muted-foreground">
-              Email your account manager or send an order to{" "}
-              <a href="mailto:orders@dripl.be" className="font-medium text-primary underline">
-                orders@dripl.be
-              </a>
-              . Include your company name and flavours needed.
+              Order flavour boxes through your MyDripl account. Delivery takes <strong>2–3 business days</strong>.
             </p>
           </div>
 
           <div className="card-shadow rounded-xl bg-card p-6 text-center">
             <div className="mx-auto mb-4 inline-flex rounded-lg bg-accent p-3">
-              <RefreshCw className="h-6 w-6 text-primary" />
+              <Droplets className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-2 font-display text-lg font-semibold text-card-foreground">
-              Automatic Refills
+              CO2 Bottles
             </h3>
             <p className="text-sm text-muted-foreground">
-              Prefer a hands-off approach? Ask about our automatic refill
-              programme and we'll send cartridges on a regular schedule.
+              Delivered by our technicians within <strong>5–14 days</strong>. Order when your last full CO2 bottle is put in the Refill Point. Orders are per 4 bottles.
             </p>
           </div>
 
@@ -49,8 +54,7 @@ const OrderingSection = () => {
               Delivery Times
             </h3>
             <p className="text-sm text-muted-foreground">
-              Orders are typically delivered within 3–5 business days.
-              Urgent? Contact us and we'll do our best to speed things up.
+              Flavour boxes: <strong>2–3 days</strong>. CO2 bottles: <strong>5–14 days</strong> (delivered by a technician). Plan ahead to avoid running out!
             </p>
           </div>
         </div>
