@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-refill-point.jpg";
+import refillPointFront from "@/assets/refill-point-front.png";
 
 const HeroSection = () => {
   return (
