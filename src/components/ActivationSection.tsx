@@ -191,8 +191,8 @@ const ActivationSection = () => {
                     {poster.description}
                   </p>
                   <a
-                    href={poster.image}
-                    download={`dripl-poster-${poster.title.toLowerCase().replace(/\s/g, "-")}.jpg`}
+                    href={poster.downloadUrl}
+                    download
                     className="mt-3 inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                   >
                     <Download className="h-3.5 w-3.5" />

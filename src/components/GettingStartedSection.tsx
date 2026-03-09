@@ -43,9 +43,9 @@ const GettingStartedSection = () => {
           Getting Started
         </h2>
         <p className="mx-auto mb-14 max-w-xl text-center text-muted-foreground">
-          Four simple steps to get Dripl up and running at your workplace.
+          Five simple steps to get Dripl up and running at your workplace.
         </p>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {steps.map((step) => (
             <div
               key={step.title}
