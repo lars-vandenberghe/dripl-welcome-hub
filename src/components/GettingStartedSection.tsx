@@ -1,27 +1,33 @@
-import { CheckCircle, Users, Droplets, Mail } from "lucide-react";
+import { ClipboardList, Wrench, Users, Droplets, Mail } from "lucide-react";
 
 const steps = [
   {
-    icon: CheckCircle,
-    title: "1. Installation",
+    icon: ClipboardList,
+    title: "1. Onboarding",
     description:
-      "Our team installs the Refill Point at your office. We handle everything — water connection, setup and testing.",
+      "You received a personal onboarding form from us. Fill in all the details and we'll take the next step and contact you.",
+  },
+  {
+    icon: Wrench,
+    title: "2. Installation",
+    description:
+      "Once we received all your details, we move on to installation. Our team handles everything. Watch your mailbox to see your appointment!",
   },
   {
     icon: Users,
-    title: "2. Introduce to your team",
+    title: "3. Introduce to your team",
     description:
       "Share the exciting news with your colleagues! Use our communication templates to announce Dripl at your workplace.",
   },
   {
     icon: Droplets,
-    title: "3. Start drinking",
+    title: "4. Start drinking",
     description:
       "Pick a flavour, tap your drink, and enjoy. It's that simple. Filtered water, functional beverages — zero packaging.",
   },
   {
     icon: Mail,
-    title: "4. Stay in touch",
+    title: "5. Stay in touch",
     description:
       "We're always here. Reach out for refills, support or any questions. Your dedicated account manager is one email away.",
   },
@@ -35,9 +41,9 @@ const GettingStartedSection = () => {
           Getting Started
         </h2>
         <p className="mx-auto mb-14 max-w-xl text-center text-muted-foreground">
-          Four simple steps to get Dripl up and running at your workplace.
+          Five simple steps to get Dripl up and running at your workplace.
         </p>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {steps.map((step) => (
             <div
               key={step.title}

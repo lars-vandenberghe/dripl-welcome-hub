@@ -1,7 +1,7 @@
 import { Download, Mail, Image, FileText, Copy, Check } from "lucide-react";
 import { useState } from "react";
-import posterHydration from "@/assets/poster-hydration.jpg";
-import posterSustainability from "@/assets/poster-sustainability.jpg";
+import posterChoice from "@/assets/poster-choice.jpg";
+import posterGeneral from "@/assets/poster-general.jpg";
 
 const emailTemplates = [
   {
@@ -54,14 +54,16 @@ Happy sipping!
 
 const posters = [
   {
-    title: "Stay Hydrated",
-    description: "Encourage your team to drink more water throughout the day.",
-    image: posterHydration,
+    title: "What's Your Choice?",
+    description: "Highlight the difference between sugary cans and healthy Dripl drinks.",
+    image: posterChoice,
+    downloadUrl: "/posters/Dripl_Poster-Choice.pdf",
   },
   {
-    title: "Zero Waste",
-    description: "Highlight the sustainability impact of using Dripl.",
-    image: posterSustainability,
+    title: "Healthy Drinks, Zero Waste",
+    description: "General poster showcasing Dripl's benefits: sugar-free, zero packaging, functional.",
+    image: posterGeneral,
+    downloadUrl: "/posters/ENG_Dripl_Posters-General.pdf",
   },
 ];
 
@@ -189,8 +191,8 @@ const ActivationSection = () => {
                     {poster.description}
                   </p>
                   <a
-                    href={poster.image}
-                    download={`dripl-poster-${poster.title.toLowerCase().replace(/\s/g, "-")}.jpg`}
+                    href={poster.downloadUrl}
+                    download
                     className="mt-3 inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                   >
                     <Download className="h-3.5 w-3.5" />
