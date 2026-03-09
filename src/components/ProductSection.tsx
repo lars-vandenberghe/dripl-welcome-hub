@@ -82,11 +82,11 @@ const ProductSection = () => {
           <p className="mb-6 text-sm text-muted-foreground">
             Including 3 functional drinks designed to boost focus, energy, and daily wellness.
           </p>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
             {flavours.map((flavour) => (
               <div
                 key={flavour.name}
-                className="group relative overflow-hidden rounded-xl aspect-square"
+                className="group relative overflow-hidden rounded-lg aspect-square"
               >
                 <img
                   src={flavour.image}
