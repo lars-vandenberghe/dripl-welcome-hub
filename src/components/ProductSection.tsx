@@ -93,17 +93,14 @@ const ProductSection = () => {
                   alt={flavour.name}
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="font-display text-lg font-bold text-white leading-tight">
-                    {flavour.name}
-                  </p>
-                  {flavour.tag && (
-                    <span className="mt-1 inline-block rounded-full bg-white/20 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {flavour.tag && (
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <span className="inline-block rounded-full bg-white/20 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm">
                       {flavour.tag}
                     </span>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
