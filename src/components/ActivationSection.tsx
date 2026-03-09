@@ -1,4 +1,4 @@
-import { Download, Mail, Image, FileText, Copy, Check } from "lucide-react";
+import { Download, Mail, Image, FileText, Copy, Check, Monitor } from "lucide-react";
 import { useState } from "react";
 import posterChoice from "@/assets/poster-choice.jpg";
 import posterGeneral from "@/assets/poster-general.jpg";
@@ -201,6 +201,32 @@ const ActivationSection = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Custom Screensaver */}
+        <div className="mt-16">
+          <div className="mb-6 flex items-center gap-3">
+            <div className="rounded-lg bg-accent p-2">
+              <Monitor className="h-5 w-5 text-primary" />
+            </div>
+            <h3 className="font-display text-2xl font-semibold text-foreground">
+              Custom Screensaver
+            </h3>
+          </div>
+          <div className="card-shadow max-w-3xl rounded-xl bg-card p-6">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Want to make it personal? We can install a <strong>custom screensaver</strong> on your Refill Point's touchscreen with a personalised message to your colleagues — perfect for welcoming your team, highlighting sustainability goals, or celebrating milestones.
+            </p>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Contact your account manager to request yours.
+            </p>
+            <a
+              href="#contact"
+              className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Request a Screensaver
+            </a>
           </div>
         </div>
       </div>
