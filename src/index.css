@@ -4,39 +4,39 @@
 
 @layer base {
   :root {
-    --background: 150 20% 97%;
-    --foreground: 160 30% 10%;
+    --background: 0 0% 100%;
+    --foreground: 260 25% 7%;
 
     --card: 0 0% 100%;
-    --card-foreground: 160 30% 10%;
+    --card-foreground: 260 25% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 160 30% 10%;
+    --popover-foreground: 260 25% 7%;
 
-    --primary: 164 60% 38%;
+    --primary: 260 25% 7%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 150 25% 93%;
-    --secondary-foreground: 160 30% 15%;
+    --secondary: 48 10% 95%;
+    --secondary-foreground: 260 25% 7%;
 
-    --muted: 150 15% 93%;
-    --muted-foreground: 160 10% 45%;
+    --muted: 48 10% 95%;
+    --muted-foreground: 260 10% 40%;
 
-    --accent: 164 45% 90%;
-    --accent-foreground: 164 60% 25%;
+    --accent: 50 100% 56%;
+    --accent-foreground: 260 25% 7%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 150 15% 88%;
-    --input: 150 15% 88%;
-    --ring: 164 60% 38%;
+    --border: 48 10% 90%;
+    --input: 48 10% 90%;
+    --ring: 260 25% 7%;
 
     --radius: 0.75rem;
 
-    --hero-gradient: linear-gradient(135deg, hsl(164, 60%, 38%), hsl(180, 50%, 30%));
-    --card-shadow: 0 2px 16px -4px hsl(164 60% 38% / 0.1);
-    --card-hover-shadow: 0 8px 30px -8px hsl(164 60% 38% / 0.18);
+    --hero-gradient: linear-gradient(135deg, hsl(260, 25%, 7%), hsl(270, 20%, 15%));
+    --card-shadow: 0 2px 16px -4px hsl(260 25% 7% / 0.08);
+    --card-hover-shadow: 0 8px 30px -8px hsl(260 25% 7% / 0.15);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -55,10 +55,11 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
   h1, h2, h3, h4 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
   }
 }
 
