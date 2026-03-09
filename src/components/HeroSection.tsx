@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-refill-point.jpg";
+import refillPointFront from "@/assets/refill-point-front.png";
 
 const HeroSection = () => {
   return (
@@ -21,10 +21,10 @@ const HeroSection = () => {
         </div>
         <div className="flex-1">
           <img
-            src={heroImage}
-            alt="Dripl Refill Point in a modern office"
-            className="mx-auto w-full max-w-md rounded-2xl shadow-2xl"
-          />
+              src={refillPointFront}
+              alt="Dripl Refill Point"
+              className="mx-auto w-full max-w-sm drop-shadow-2xl"
+            />
         </div>
       </div>
     </section>
