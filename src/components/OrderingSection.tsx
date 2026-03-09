@@ -21,7 +21,7 @@ const OrderingSection = () => {
           </a>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 max-w-2xl mx-auto">
           <div className="card-shadow rounded-xl bg-card p-6 text-center">
             <div className="mx-auto mb-4 inline-flex rounded-lg bg-accent p-3">
               <Package className="h-6 w-6 text-primary" />
