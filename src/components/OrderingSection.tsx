@@ -30,7 +30,7 @@ const OrderingSection = () => {
               Flavour Boxes
             </h3>
             <p className="text-sm text-muted-foreground">
-              Order flavour boxes through your MyDripl account. Delivery takes <strong>2–3 business days</strong>.
+              Order flavour boxes through your MyDripl account in sets of <strong>4 boxes</strong> — mix and match flavours as you like. This way we optimise delivery and lower our impact on the planet. Delivery takes <strong>2–3 business days</strong>.
             </p>
           </div>
 
