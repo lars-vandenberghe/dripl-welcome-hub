@@ -46,17 +46,7 @@ const OrderingSection = () => {
             </p>
           </div>
 
-          <div className="card-shadow rounded-xl bg-card p-6 text-center">
-            <div className="mx-auto mb-4 inline-flex rounded-lg bg-accent p-3">
-              <Clock className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="mb-2 font-display text-lg font-semibold text-card-foreground">
-              Delivery Times
-            </h3>
-            <p className="text-sm text-muted-foreground">
-              Flavour boxes: <strong>2–3 days</strong>. CO2 bottles: <strong>5–14 days</strong> (delivered by a technician). Plan ahead to avoid running out!
-            </p>
-          </div>
+        
         </div>
       </div>
     </section>
