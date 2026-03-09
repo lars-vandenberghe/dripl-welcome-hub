@@ -49,13 +49,21 @@ const ProductSection = () => {
   return (
     <section id="product" className="bg-secondary py-20">
       <div className="container mx-auto px-6">
-        <h2 className="mb-4 text-center font-display text-3xl font-bold text-foreground md:text-4xl">
-          About the Refill Point
-        </h2>
-        <p className="mx-auto mb-14 max-w-xl text-center text-muted-foreground">
-          A smart, award-winning system that delivers filtered water and
-          functional beverages — without a single piece of packaging.
-        </p>
+        <div className="mb-14 flex flex-col items-center gap-10 md:flex-row">
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="mb-4 font-display text-3xl font-bold text-foreground md:text-4xl">
+              About the Refill Point
+            </h2>
+            <p className="max-w-xl text-muted-foreground">
+              A smart, award-winning system that delivers filtered water and
+              functional beverages — without a single piece of packaging.
+            </p>
+          </div>
+          <div className="flex flex-1 items-center justify-center gap-4">
+            <img src={refillPointSide} alt="Dripl Refill Point side view" className="h-64 w-auto drop-shadow-xl" />
+            <img src={refillPointScreen} alt="Dripl Refill Point touchscreen" className="h-52 w-auto rounded-lg drop-shadow-xl" />
+          </div>
+        </div>
         <div className="grid gap-8 md:grid-cols-2">
           {features.map((f) => (
             <div
