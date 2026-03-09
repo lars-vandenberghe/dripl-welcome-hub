@@ -14,7 +14,7 @@ const Header = () => {
           </span>
         </div>
         <nav className="hidden gap-6 md:flex">
-          {["Getting Started", "Product", "Ordering", "FAQ", "Contact"].map(
+          {["Getting Started", "Activation", "Product", "Ordering", "FAQ", "Contact"].map(
             (item) => (
               <a
                 key={item}

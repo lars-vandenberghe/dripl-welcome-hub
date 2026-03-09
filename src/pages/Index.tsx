@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import GettingStartedSection from "@/components/GettingStartedSection";
+import ActivationSection from "@/components/ActivationSection";
 import ProductSection from "@/components/ProductSection";
 import OrderingSection from "@/components/OrderingSection";
 import FAQSection from "@/components/FAQSection";
@@ -13,6 +14,7 @@ const Index = () => {
       <Header />
       <HeroSection />
       <GettingStartedSection />
+      <ActivationSection />
       <ProductSection />
       <OrderingSection />
       <FAQSection />
