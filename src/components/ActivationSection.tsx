@@ -1,7 +1,7 @@
 import { Download, Mail, Image, FileText, Copy, Check } from "lucide-react";
 import { useState } from "react";
-import posterHydration from "@/assets/poster-hydration.jpg";
-import posterSustainability from "@/assets/poster-sustainability.jpg";
+import posterChoice from "@/assets/poster-choice.jpg";
+import posterGeneral from "@/assets/poster-general.jpg";
 
 const emailTemplates = [
   {
