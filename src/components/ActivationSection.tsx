@@ -54,14 +54,16 @@ Happy sipping!
 
 const posters = [
   {
-    title: "Stay Hydrated",
-    description: "Encourage your team to drink more water throughout the day.",
-    image: posterHydration,
+    title: "What's Your Choice?",
+    description: "Highlight the difference between sugary cans and healthy Dripl drinks.",
+    image: posterChoice,
+    downloadUrl: "/posters/Dripl_Poster-Choice.pdf",
   },
   {
-    title: "Zero Waste",
-    description: "Highlight the sustainability impact of using Dripl.",
-    image: posterSustainability,
+    title: "Healthy Drinks, Zero Waste",
+    description: "General poster showcasing Dripl's benefits: sugar-free, zero packaging, functional.",
+    image: posterGeneral,
+    downloadUrl: "/posters/ENG_Dripl_Posters-General.pdf",
   },
 ];
 
